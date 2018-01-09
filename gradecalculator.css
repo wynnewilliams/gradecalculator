@@ -1,0 +1,36 @@
+body {
+    /*background-color: ;*/
+    font-family: Baskerville;
+    font-size: 18px;
+    text-align: center;
+    margin: 25px;
+    background-color: silver;
+
+    /*background-image:("<img src='img/Berkeley High.jpg'>");*/
+    color: white;
+}
+#title {
+    font-size: 30px;
+}
+.largertext{
+    font-size: 16px;
+}
+#myButton{
+    font-size: large;
+}
+#buttonTwo{
+    font-size: large;
+}
+#gradeneededonfinal{
+    font-size: 25px;
+}
+
+
+
+
+
+/*#showword{*/
+    /*font-size: 45px;*/
+    /*font-family: AppleMyungjo;*/
+    /*text-align: center;*/
+/*}*/

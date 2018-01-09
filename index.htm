@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="gradecalculator.js"></script>
+    <link rel="stylesheet" href="gradecalculator.css"/>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="title">Grade Calculator</div>
+
+<table border=”1” cellspacing=”2” cellpadding=”5” align="center">
+    <tr>
+        <td>Grade Calculator</td>
+        <td>Homework</td>
+        <td>Quizzes</td>
+        <td>Tests</td>
+        <td>Midterm</td>
+    </tr>
+    <tr>
+        <td>Weight, measured in percent</td>
+        <td><input type="text" class="largertext" id="hwweight" value="15" size="15" onfocus="this.value=''"></td>
+        <td><input type="text" class="largertext" id="qzweight" value="15" size="15" onfocus="this.value=''"></td>
+        <td><input type="text" class="largertext" id="tstweight" value="45" size="15" onfocus="this.value=''"></td>
+        <td><input type="text" class="largertext" id="mtmweight" value="25" size="15" onfocus="this.value=''"></td>
+    </tr>
+    <tr>
+        <td>Assignment Grades, separated by commas</td>
+        <td><input type="text" class="largertext" id="hwgrds" value="90,85,100" size="15" onfocus="this.value=''"></td>
+        <td><input type="text" class="largertext" id="qzgrds" value="89,97,46,91" size="15" onfocus="this.value=''"></td>
+        <td><input type="text" class="largertext" id="tstgrds" value="88,92" size="15" onfocus="this.value=''"></td>
+        <td><input type="text" class="largertext" id="mtmgrds" value="89" size="15" onfocus="this.value=''"></td>
+    </tr>
+</table>
+<br>
+<button id="myButton" onclick="calculateCurrentGrade()">Calculate Current Grade</button>
+<div id="qwerty"></div>
+<div id="currentgrade"></div>
+<div id="warning"></div>
+<br>
+<label for="finalWeight">Weight of Final:</label>
+<input type="text" class="largertext" id="finalWeight" value="15" size="15" onfocus="this.value=''">
+<br>
+<br>
+<label for="gradeDesired">Grade Desired:</label>
+
+<input type="text" class="largertext" id="gradeDesired" value="90" size="15" onfocus="this.value=''">
+<br>
+<br>
+<button id="buttonTwo" onclick="calculateGradeNeeded()">Calculate Grade Needed</button>
+<div id="gradeneededonfinal"></div>
+<div id="alert"></div>
+
+</body>
+</html>
